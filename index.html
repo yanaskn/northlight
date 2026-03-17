@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Northlight — Decision Intelligence Firm</title>
+<title>Northlight — Decision Intelligence</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23C9A96E' stroke-width='0.8' opacity='0.28'/%3E%3Ccircle cx='32' cy='6' r='2.2' fill='%23C9A96E' opacity='0.42'/%3E%3Ccircle cx='50.4' cy='13.6' r='1.6' fill='%23C9A96E' opacity='0.26'/%3E%3Ccircle cx='58' cy='32' r='2.2' fill='%23C9A96E' opacity='0.42'/%3E%3Ccircle cx='50.4' cy='50.4' r='1.6' fill='%23C9A96E' opacity='0.26'/%3E%3Ccircle cx='32' cy='58' r='2.2' fill='%23C9A96E' opacity='0.42'/%3E%3Ccircle cx='13.6' cy='50.4' r='1.6' fill='%23C9A96E' opacity='0.26'/%3E%3Ccircle cx='6' cy='32' r='2.2' fill='%23C9A96E' opacity='0.42'/%3E%3Ccircle cx='13.6' cy='13.6' r='1.6' fill='%23C9A96E' opacity='0.26'/%3E%3Cpath d='M32,10 L33.4,30.6 L54,32 L33.4,33.4 L32,54 L30.6,33.4 L10,32 L30.6,30.6 Z' fill='%23C9A96E'/%3E%3C/svg%3E">
 <!--
   TYPOGRAPHY NOTE
   This file uses Google Fonts approximations for browser preview.
   To activate your paid fonts, add self-hosted @font-face declarations:
-  
+
   Display / Headlines:  'Canela Deck'  Light (300), Light Italic
   Body:                 'Söhne'        Buch (400), Kräftig (500)
   Labels / Mono:        'Söhne Mono'   Leicht (300), Buch (400)
-  
-  Then replace the font-family values:
+
+  Then replace the font-family values below:
     --serif  → 'Canela Deck', Georgia, serif
     --sans   → 'Söhne', 'Helvetica Neue', sans-serif
     --mono   → 'Söhne Mono', 'Courier New', monospace
@@ -34,7 +34,6 @@
   --f:rgba(242,239,232,0.26);
   --a:#C9A96E;
   --al:rgba(201,169,110,0.1);
-  /* Font stacks — swap to paid fonts here */
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:'Jost','Helvetica Neue',sans-serif;
   --mono:'DM Mono','Courier New',monospace;
@@ -70,7 +69,6 @@ nav.scrolled{background:rgba(8,8,7,.96);backdrop-filter:blur(20px);border-color:
 @keyframes fI{from{opacity:0}to{opacity:1}}
 
 /* ══════════ HOME ══════════ */
-
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 52px 92px;position:relative;overflow:hidden}
 .h-eye{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--m);margin-bottom:28px;opacity:0;animation:fU .7s ease .3s forwards;padding-top:120px}
 .h-head{font-family:var(--serif);font-size:clamp(52px,7.2vw,112px);font-weight:300;line-height:.94;letter-spacing:-.02em;max-width:960px;opacity:0;animation:fU 1s ease .5s forwards}
@@ -160,7 +158,6 @@ nav.scrolled{background:rgba(8,8,7,.96);backdrop-filter:blur(20px);border-color:
 .pgh{font-family:var(--serif);font-size:clamp(48px,6.5vw,100px);font-weight:300;line-height:.94;letter-spacing:-.02em}
 .pgh em{font-style:italic;color:var(--a)}
 .pgsub{font-size:14px;color:var(--m);line-height:1.9;max-width:500px;margin-top:36px}
-
 .olist{border-bottom:.5px solid var(--b)}
 .oi{border-top:.5px solid var(--b);cursor:pointer;transition:background .2s}
 .oi:hover,.oi.open{background:rgba(255,255,255,.014)}
@@ -183,7 +180,6 @@ nav.scrolled{background:rgba(8,8,7,.96);backdrop-filter:blur(20px);border-color:
 .ochip{font-family:var(--mono);font-size:10px;padding:4px 10px;border:.5px solid var(--b);color:var(--f)}
 .onote{margin-top:22px;padding-top:16px;border-top:.5px solid var(--b);font-family:var(--mono);font-size:11px;color:var(--f);font-style:italic}
 .onote a{color:var(--a);border-bottom:.5px solid rgba(201,169,110,.3);text-decoration:none;cursor:pointer}
-
 .engage{padding:100px 52px;border-top:.5px solid var(--b);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .eng-h{font-family:var(--serif);font-size:clamp(30px,3.3vw,50px);font-weight:300;line-height:1.1;margin-top:10px}
 .eng-h em{font-style:italic;color:var(--a)}
@@ -215,9 +211,6 @@ nav.scrolled{background:rgba(8,8,7,.96);backdrop-filter:blur(20px);border-color:
 footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-content:space-between;align-items:center}
 .fw{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--m)}
 .fn{font-family:var(--mono);font-size:10px;color:var(--f)}
-
-/* NEEDLE MARK — drawn in nav via canvas, but inlined as SVG for reliability */
-.nmark svg{display:block}
 
 /* RESPONSIVE */
 @media(max-width:960px){
@@ -265,7 +258,7 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
     <button class="nl" onclick="showPage('home')">Index</button>
     <button class="nl" onclick="showPage('work')">Work</button>
     <button class="nl" onclick="showPage('about')">About</button>
-    <button class="ncta" onclick="goContact()">Get in touch →</button>
+    <button class="ncta" onclick="goContact()">Get in touch &rarr;</button>
   </div>
 </nav>
 
@@ -273,27 +266,27 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
 <div class="page active" id="page-home">
 
   <section class="hero">
-    <p class="h-eye">Decision Intelligence Firm — Los Angeles</p>
+    <p class="h-eye">Decision Intelligence &mdash; Strategy, Infrastructure, and AI &mdash; Los Angeles</p>
     <h1 class="h-head">We fix how your<br>organization makes<br><em>decisions.</em> Then we<br>make it permanent.</h1>
-    <p class="h-desc">Northlight works with scaling organizations to diagnose what's driving margin decay, operational complexity, and decision breakdown — and leads the changes required to restore clarity and control.</p>
+    <p class="h-desc">Northlight works with scaling organizations to diagnose what's driving margin decay, operational complexity, and decision breakdown &mdash; and leads the changes required to restore clarity and control.</p>
     <div class="h-acts">
       <button class="bgold" onclick="showPage('work')">How we work</button>
-      <button class="bgh" onclick="goContact()">Get in touch →</button>
+      <button class="bgh" onclick="goContact()">Get in touch &rarr;</button>
     </div>
-    <p class="h-pull">"Northlight exits when leadership can make and defend consequential decisions without relying on intuition, partial information, or political negotiation."</p>
+    <p class="h-pull">&ldquo;Northlight exits when leadership can make and defend consequential decisions without relying on intuition, partial information, or political negotiation.&rdquo;</p>
   </section>
 
   <section class="thesis reveal">
     <div class="thesis-in">
       <div>
         <div class="stag">Point of view</div>
-        <h2 class="th-h">Growth creates complexity. Complexity <em>breaks the way decisions get made.</em> Most organizations don't see it until the damage is done.</h2>
+        <h2 class="th-h">Growth creates complexity. Complexity <em>breaks the way decisions get made.</em> Most organizations don&rsquo;t see it until the damage is done.</h2>
       </div>
       <div class="th-aside">
         <div class="ar"></div>
-        <p>Between $10M and $200M in revenue, something predictable happens. The decision structures that drove early growth stop scaling. Margins become unpredictable. Escalations multiply. Leaders run on intuition because the information infrastructure can't keep up.</p>
-        <p>This is not a technology problem. It is not a talent problem. It is a <strong>structural problem</strong> — and it requires executive-level intervention to fix.</p>
-        <p>Northlight diagnoses the structural failure, redesigns the decision infrastructure, and — where AI can operationalize the fix — builds the systems that make it last.</p>
+        <p>Between $10M and $200M in revenue, something predictable happens. The decision structures that drove early growth stop scaling. Margins become unpredictable. Escalations multiply. Leaders run on intuition because the information infrastructure can&rsquo;t keep up.</p>
+        <p>This is not a technology problem. It is not a talent problem. It is a <strong>structural problem</strong> &mdash; and it requires executive-level intervention to fix.</p>
+        <p>Northlight diagnoses the structural failure, redesigns the decision infrastructure, and &mdash; where AI can operationalize the fix &mdash; builds the systems that make it last.</p>
       </div>
     </div>
   </section>
@@ -304,26 +297,26 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
         <div class="stag">Who we work with</div>
         <h2 class="who-h">Organizations where <em>success created the problem.</em></h2>
       </div>
-      <p class="who-note">Northlight works with founders and senior leaders when the organization has outgrown the way decisions are currently made — and when existing data is no longer usable at the executive decision layer.</p>
+      <p class="who-note">Northlight works with founders and senior leaders when the organization has outgrown the way decisions are currently made &mdash; and when existing data is no longer usable at the executive decision layer.</p>
     </div>
     <div class="profiles">
       <div class="prof">
-        <div class="pnum">01 — CEO managing visible risk</div>
+        <div class="pnum">01 &mdash; CEO managing visible risk</div>
         <div class="ptitle">Growing fast. Losing grip.</div>
-        <p class="pbody">Revenue is up. But margins are unpredictable. Decisions take longer and escalate more than they used to. Expansion or acquisition has raised the stakes, and nobody can confidently answer "what breaks if we keep going like this?"</p>
-        <p class="pq">"We're making bigger decisions with less certainty."</p>
+        <p class="pbody">Revenue is up. But margins are unpredictable. Decisions take longer and escalate more than they used to. Expansion or acquisition has raised the stakes, and nobody can confidently answer &ldquo;what breaks if we keep going like this?&rdquo;</p>
+        <p class="pq">&ldquo;We&rsquo;re making bigger decisions with less certainty.&rdquo;</p>
       </div>
       <div class="prof">
-        <div class="pnum">02 — Executive carrying structural load</div>
+        <div class="pnum">02 &mdash; Executive carrying structural load</div>
         <div class="ptitle">Compensating. Constantly.</div>
-        <p class="pbody">Trusted, capable, already absorbing what the systems can't handle. Firefighting is the default. Everything works — but only because people are pushing constantly. Growth has amplified minor inefficiencies into operational risk.</p>
-        <p class="pq">"We're scaling faster than our infrastructure."</p>
+        <p class="pbody">Trusted, capable, already absorbing what the systems can&rsquo;t handle. Firefighting is the default. Everything works &mdash; but only because people are pushing constantly. Growth has amplified minor inefficiencies into operational risk.</p>
+        <p class="pq">&ldquo;We&rsquo;re scaling faster than our infrastructure.&rdquo;</p>
       </div>
       <div class="prof">
-        <div class="pnum">03 — Leadership at an inflection</div>
+        <div class="pnum">03 &mdash; Leadership at an inflection</div>
         <div class="ptitle">The stakes just changed.</div>
-        <p class="pbody">An acquisition, a regulatory shift, a new market, a significant capital deployment. The decision that worked at the last scale won't work at this one. Leadership needs defensible, board-level clarity before irreversible commitments.</p>
-        <p class="pq">"We want to be disciplined about what comes next."</p>
+        <p class="pbody">An acquisition, a regulatory shift, a new market, a significant capital deployment. The decision that worked at the last scale won&rsquo;t work at this one. Leadership needs defensible, board-level clarity before irreversible commitments.</p>
+        <p class="pq">&ldquo;We want to be disciplined about what comes next.&rdquo;</p>
       </div>
     </div>
     <div class="ind-row reveal">
@@ -333,7 +326,7 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
       <span class="ind">Logistics</span>
       <span class="ind">Professional services</span>
       <span class="ind">Regulated industries</span>
-      <span class="rev-note">$10M – $200M revenue</span>
+      <span class="rev-note">$10M &ndash; $200M revenue</span>
     </div>
   </section>
 
@@ -342,32 +335,32 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
     <h2 class="mh">From boardroom diagnosis to <em>operational reality.</em></h2>
     <div class="msteps">
       <div class="ms">
-        <div class="msnum">01 — Signal</div>
+        <div class="msnum">01 &mdash; Signal</div>
         <div class="msname">Diagnose</div>
-        <div class="mstype">2–3 weeks</div>
-        <p class="msbody">A structured executive diagnostic that identifies where decision-making has stopped scaling safely — and what's exposed if nothing changes.</p>
-        <button class="mslink" onclick="showPage('work')">Full scope →</button>
+        <div class="mstype">2&ndash;3 weeks</div>
+        <p class="msbody">A structured executive diagnostic that identifies where decision-making has stopped scaling safely &mdash; and what&rsquo;s exposed if nothing changes.</p>
+        <button class="mslink" onclick="showPage('work')">Full scope &rarr;</button>
       </div>
       <div class="ms">
-        <div class="msnum">02 — Rescue</div>
+        <div class="msnum">02 &mdash; Rescue</div>
         <div class="msname">Stabilize</div>
-        <div class="mstype">6–10 weeks</div>
+        <div class="mstype">6&ndash;10 weeks</div>
         <p class="msbody">Post-scale or post-transaction operating reset. Stabilize decision flow and operational coherence before inefficiencies harden into permanent drag.</p>
-        <button class="mslink" onclick="showPage('work')">Full scope →</button>
+        <button class="mslink" onclick="showPage('work')">Full scope &rarr;</button>
       </div>
       <div class="ms">
-        <div class="msnum">03 — Build</div>
+        <div class="msnum">03 &mdash; Build</div>
         <div class="msname">Redesign</div>
-        <div class="mstype">8–16 weeks</div>
+        <div class="mstype">8&ndash;16 weeks</div>
         <p class="msbody">Redesign decision infrastructure using the VDDM framework. Where AI can operationalize the fix, build the systems that make the change permanent.</p>
-        <button class="mslink" onclick="showPage('work')">Full scope →</button>
+        <button class="mslink" onclick="showPage('work')">Full scope &rarr;</button>
       </div>
       <div class="ms">
-        <div class="msnum">04 — Field</div>
+        <div class="msnum">04 &mdash; Field</div>
         <div class="msname">Steward</div>
         <div class="mstype">By invitation</div>
         <p class="msbody">Short-term executive operating authority for organizations that need leadership continuity through stabilization. Northlight exits when the dependency is gone.</p>
-        <button class="mslink" onclick="showPage('work')">Full scope →</button>
+        <button class="mslink" onclick="showPage('work')">Full scope &rarr;</button>
       </div>
     </div>
   </section>
@@ -378,7 +371,7 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
         <div class="stag">Proprietary methodology</div>
         <h2 class="vddm-h">The Northlight<br><em>Decision Framework</em></h2>
       </div>
-      <p class="vddm-desc">Every Northlight engagement is anchored in VDDM — Value-Driven Decision Making — a proprietary framework developed through doctoral research in organizational decision systems. It translates abstract executive values into quantified, defensible decision infrastructure.</p>
+      <p class="vddm-desc">Every Northlight engagement is anchored in VDDM &mdash; Value-Driven Decision Making &mdash; a proprietary framework developed through doctoral research in organizational decision systems. It is designed to live inside your organization, not in our files. It translates abstract executive values into quantified, defensible decision infrastructure that your leadership can run without us in the room.</p>
     </div>
     <div class="vsteps">
       <div class="vs">
@@ -399,12 +392,12 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
       <div class="vs">
         <div class="vsnum">04</div>
         <div class="vsname">Network quantification</div>
-        <p class="vsbody">Build a unified Objective Network that identifies the highest-impact pathways to the primary business goal — the map leadership has been missing.</p>
+        <p class="vsbody">Build a unified Objective Network that identifies the highest-impact pathways to the primary business goal &mdash; the map leadership has been missing.</p>
       </div>
       <div class="vs">
         <div class="vsnum">05</div>
         <div class="vsname">Alternative generation</div>
-        <p class="vsbody">Score operational strategies against the quantified value network. Decisions are now defensible — to the board, to investors, to the team.</p>
+        <p class="vsbody">Score operational strategies against the quantified value network. Decisions are now defensible &mdash; to the board, to investors, to the team.</p>
       </div>
     </div>
     <div class="vai reveal">
@@ -420,17 +413,17 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
         <circle cx="11" cy="7"  r="0.9" fill="#C9A96E" opacity="0.25"/>
         <path d="M20,5 L20.9,13.1 L29,14 L20.9,14.9 L20,23 L19.1,14.9 L11,14 L19.1,13.1 Z" fill="#C9A96E"/>
       </svg>
-      <p class="vai-txt">Where AI can operationalize the decision framework — automating information flows, surfacing the right data at the right decision moment, or building systems that enforce the new decision logic — <strong>Northlight builds it.</strong> Using Claude Code, agentic AI systems, and the full modern stack, Northlight builds the infrastructure that makes the change permanent.</p>
+      <p class="vai-txt">Where AI can operationalize the decision framework &mdash; automating information flows, surfacing the right data at the right decision moment, or building systems that enforce the new decision logic &mdash; <strong>Northlight builds it.</strong> Using Claude Code, agentic AI systems, and the full modern stack, Northlight builds the infrastructure that makes the change permanent.</p>
     </div>
   </section>
 
   <section class="hcta reveal" id="home-contact">
     <div class="hcta-ghost">N</div>
     <p class="hcta-lbl">Start the conversation</p>
-    <h2 class="hcta-h">If the organization has become more complex than the way you're <em>currently making decisions,</em> it's time to call.</h2>
+    <h2 class="hcta-h">If the organization has become more complex than the way you&rsquo;re <em>currently making decisions,</em> it&rsquo;s time to call.</h2>
     <div style="display:flex;align-items:center;gap:36px">
-      <a href="/cdn-cgi/l/email-protection#375f525b5b58774345424443595845435f5b5e505f431954585a" class="bgold"><span class="__cf_email__" data-cfemail="573f323b3b38172325222423393825233f3b3e303f237934383a">[email&#160;protected]</span></a>
-      <button class="bgh" onclick="showPage('work')">See how we work →</button>
+      <a href="mailto:hello@trustnorthlight.com" class="bgold">hello@trustnorthlight.com</a>
+      <button class="bgh" onclick="showPage('work')">See how we work &rarr;</button>
     </div>
     <p class="hcta-sm">We respond to every inquiry personally. You will hear from Yana directly.</p>
   </section>
@@ -438,7 +431,7 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
   <footer>
     <div style="display:flex;align-items:center;gap:20px">
       <span class="fw">Northlight</span>
-      <span class="fn">·</span>
+      <span class="fn">&middot;</span>
       <span class="fn">Los Angeles, CA</span>
     </div>
     <span class="fn">By introduction or inquiry only</span>
@@ -450,36 +443,36 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
   <div class="pghero">
     <p class="pglbl">Engagements</p>
     <h1 class="pgh">Four ways<br>to <em>engage.</em></h1>
-    <p class="pgsub">Every engagement is time-bound, outcome-defined, and exits when the work is done. Most clients come to Northlight at 02 or 03 — after something has already exposed a structural gap.</p>
+    <p class="pgsub">Every engagement is time-bound, outcome-defined, and exits when the work is done. Most clients come to Northlight at 02 or 03 &mdash; after something has already exposed a structural gap.</p>
   </div>
 
   <div class="olist">
     <div class="oi" onclick="toggleO(this)">
       <div class="otop"><span class="oidx">01</span><div><div class="oname">Signal</div><div class="osub">Executive decision diagnostic</div></div><span class="otog">+</span></div>
       <div class="obody">
-        <div class="otrig">"We want to understand where we're exposed — before we commit to the next phase of growth."</div>
+        <div class="otrig">&ldquo;We want to understand where we&rsquo;re exposed &mdash; before we commit to the next phase of growth.&rdquo;</div>
         <div>
           <div class="clbl">What Northlight does</div>
           <ul class="oli">
-            <li>Structured 60–90 minute executive diagnostic: context, decision surface, authority gaps, information quality, and current risk</li>
+            <li>Structured 60&ndash;90 minute executive diagnostic: context, decision surface, authority gaps, information quality, and current risk</li>
             <li>Assessment of where decision-making has stopped scaling safely under current conditions</li>
-            <li>Competitive and structural gap analysis — where margin, risk, or operational coherence is leaking</li>
+            <li>Competitive and structural gap analysis &mdash; where margin, risk, or operational coherence is leaking</li>
             <li>Clear recommendation: no intervention needed, targeted intervention, or timing is wrong</li>
           </ul>
-          <p class="onote">Pricing by conversation. <a onclick="goContact()">Reach out to discuss →</a></p>
+          <p class="onote">Pricing by conversation. <a onclick="goContact()">Reach out to discuss &rarr;</a></p>
         </div>
         <div>
           <div class="clbl">The deliverable</div>
-          <div class="obox">A frank, board-ready Signal Report: where decision infrastructure is failing, what's exposed, and what the right intervention looks like. A verdict — delivered by someone who will also do the work.</div>
+          <div class="obox">A frank, board-ready Signal Report: where decision infrastructure is failing, what&rsquo;s exposed, and what the right intervention looks like. A verdict &mdash; delivered by someone who will also do the work.</div>
           <div class="clbl" style="margin-top:18px">Methodology</div>
-          <div class="ochips"><span class="ochip">VDDM Phases 1–2</span><span class="ochip">Stakeholder mapping</span><span class="ochip">Value elicitation</span><span class="ochip">Northlight Diagnostic</span></div>
+          <div class="ochips"><span class="ochip">VDDM Phases 1&ndash;2</span><span class="ochip">Stakeholder mapping</span><span class="ochip">Value elicitation</span><span class="ochip">Northlight Diagnostic</span></div>
         </div>
       </div>
     </div>
     <div class="oi" onclick="toggleO(this)">
       <div class="otop"><span class="oidx">02</span><div><div class="oname">Rescue</div><div class="osub">Post-scale operating reset</div></div><span class="otog">+</span></div>
       <div class="obody">
-        <div class="otrig">"We went through rapid growth, an acquisition, or a structural change — and the way we operate doesn't match the organization we are now."</div>
+        <div class="otrig">&ldquo;We went through rapid growth, an acquisition, or a structural change &mdash; and the way we operate doesn&rsquo;t match the organization we are now.&rdquo;</div>
         <div>
           <div class="clbl">What Northlight does</div>
           <ul class="oli">
@@ -488,42 +481,42 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
             <li>Surface and resolve conflicting assumptions embedded in systems and processes</li>
             <li>Restore operational clarity without slowing execution momentum</li>
           </ul>
-          <p class="onote">Pricing by conversation. <a onclick="goContact()">Reach out to discuss →</a></p>
+          <p class="onote">Pricing by conversation. <a onclick="goContact()">Reach out to discuss &rarr;</a></p>
         </div>
         <div>
           <div class="clbl">The deliverable</div>
-          <div class="obox">An organization that operates coherently at its new scale — without executive heroics, constant escalation, or margin erosion. Northlight stabilizes the decision infrastructure before inefficiencies harden into permanent drag.</div>
+          <div class="obox">An organization that operates coherently at its new scale &mdash; without executive heroics, constant escalation, or margin erosion. Northlight stabilizes the decision infrastructure before inefficiencies harden into permanent drag.</div>
           <div class="clbl" style="margin-top:18px">Methodology</div>
-          <div class="ochips"><span class="ochip">VDDM Phases 3–4</span><span class="ochip">Operating cadence design</span><span class="ochip">Decision rights mapping</span><span class="ochip">AI workflow audit</span></div>
+          <div class="ochips"><span class="ochip">VDDM Phases 3&ndash;4</span><span class="ochip">Operating cadence design</span><span class="ochip">Decision rights mapping</span><span class="ochip">AI workflow audit</span></div>
         </div>
       </div>
     </div>
     <div class="oi" onclick="toggleO(this)">
       <div class="otop"><span class="oidx">03</span><div><div class="oname">Build</div><div class="osub">Decision infrastructure + AI systems</div></div><span class="otog">+</span></div>
       <div class="obody">
-        <div class="otrig">"We know what we need to fix. We need someone to design the infrastructure — and build the systems that operationalize it."</div>
+        <div class="otrig">&ldquo;We know what we need to fix. We need someone to design the infrastructure &mdash; and build the systems that operationalize it.&rdquo;</div>
         <div>
           <div class="clbl">What Northlight does</div>
           <ul class="oli">
             <li>Apply VDDM framework end-to-end: stakeholder mapping through alternative generation and scoring</li>
             <li>Design decision rights, governance, and operating cadence aligned to the new infrastructure</li>
             <li>Where AI accelerates the fix: architect and build the agentic systems using Claude Code, MCP, and the modern AI stack</li>
-            <li>Deploy, test, and embed — Northlight stays until the infrastructure is running, not just designed</li>
+            <li>Deploy, test, and embed &mdash; Northlight stays until the infrastructure is running, not just designed</li>
           </ul>
-          <p class="onote">Pricing by conversation. <a onclick="goContact()">Reach out to discuss →</a></p>
+          <p class="onote">Pricing by conversation. <a onclick="goContact()">Reach out to discuss &rarr;</a></p>
         </div>
         <div>
           <div class="clbl">The deliverable</div>
-          <div class="obox">A redesigned decision infrastructure and — where relevant — the AI systems that make it permanent. The framework doesn't live in a binder. It runs. Northlight signs off when the change is operationally embedded.</div>
+          <div class="obox">A redesigned decision infrastructure and &mdash; where relevant &mdash; the AI systems that make it permanent. The framework doesn&rsquo;t live in a binder. It runs. Northlight signs off when the change is operationally embedded.</div>
           <div class="clbl" style="margin-top:18px">Tools</div>
           <div class="ochips"><span class="ochip">VDDM full framework</span><span class="ochip">Claude Code</span><span class="ochip">Claude API + MCP</span><span class="ochip">n8n / Zapier</span><span class="ochip">Python / TypeScript</span></div>
         </div>
       </div>
     </div>
     <div class="oi" onclick="toggleO(this)">
-      <div class="otop"><span class="oidx">04</span><div><div class="oname">Field</div><div class="osub">Executive operating support — by invitation</div></div><span class="otog">+</span></div>
+      <div class="otop"><span class="oidx">04</span><div><div class="oname">Field</div><div class="osub">Executive operating support &mdash; by invitation</div></div><span class="otog">+</span></div>
       <div class="obody">
-        <div class="otrig">"We need executive operating leadership through this transition — without creating a permanent dependency."</div>
+        <div class="otrig">&ldquo;We need executive operating leadership through this transition &mdash; without creating a permanent dependency.&rdquo;</div>
         <div>
           <div class="clbl">What Northlight does</div>
           <ul class="oli">
@@ -532,13 +525,13 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
             <li>First call when a structural question arises or a consequential decision requires a clear framework</li>
             <li>Continued iteration on AI systems and operating infrastructure already in place</li>
           </ul>
-          <p class="onote">By invitation only. <a onclick="goContact()">Inquire to discuss →</a></p>
+          <p class="onote">By invitation only. <a onclick="goContact()">Inquire to discuss &rarr;</a></p>
         </div>
         <div>
           <div class="clbl">The deliverable</div>
-          <div class="obox">Short-term executive operating presence that builds independence, not reliance. Northlight exits when leadership can operate the new infrastructure without support — typically 3–6 months.</div>
+          <div class="obox">Short-term executive operating presence that builds independence, not reliance. Northlight exits when leadership can operate the new infrastructure without support &mdash; typically 3&ndash;6 months.</div>
           <div class="clbl" style="margin-top:18px">Scope</div>
-          <div class="ochips"><span class="ochip">Executive operating authority</span><span class="ochip">Full VDDM access</span><span class="ochip">Full AI stack — as needed</span></div>
+          <div class="ochips"><span class="ochip">Executive operating authority</span><span class="ochip">Full VDDM access</span><span class="ochip">Full AI stack &mdash; as needed</span></div>
         </div>
       </div>
     </div>
@@ -546,7 +539,7 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
 
   <div class="exit-band">
     <div class="exit-lbl">When we leave</div>
-    <p class="exit-q">"Northlight exits when leadership can make and defend <span>consequential decisions</span> without relying on intuition, partial information, or political negotiation — and when operations no longer depend on executive heroics to function."</p>
+    <p class="exit-q">&ldquo;Northlight exits when leadership can make and defend <span>consequential decisions</span> without relying on intuition, partial information, or political negotiation &mdash; and when operations no longer depend on executive heroics to function.&rdquo;</p>
   </div>
 
   <div class="engage reveal">
@@ -555,15 +548,15 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
       <h2 class="eng-h">Every engagement begins with an <em>honest conversation.</em></h2>
     </div>
     <div class="eng-r">
-      <p>The initial consultation is a structured executive conversation — 60 to 90 minutes — designed to assess whether the organization's decision-making is scaling safely. It is not a sales call. It is a diagnostic.</p>
-      <p>We close with one of three outcomes: no intervention needed, a targeted intervention with scope and rationale, or timing is wrong and the risks are noted. You'll hear from Yana directly.</p>
-      <a href="/cdn-cgi/l/email-protection#127a777e7e7d5266606761667c7d60667a7e7b757a663c717d7f" class="bgold"><span class="__cf_email__" data-cfemail="2b434e4747446b5f595e585f4544595f4347424c435f05484446">[email&#160;protected]</span></a>
+      <p>The initial consultation is a structured executive conversation &mdash; 60 to 90 minutes &mdash; designed to assess whether the organization&rsquo;s decision-making is scaling safely. It is not a sales call. It is a diagnostic.</p>
+      <p>We close with one of three outcomes: no intervention needed, a targeted intervention with scope and rationale, or timing is wrong and the risks are noted. You&rsquo;ll hear from Yana directly.</p>
+      <a href="mailto:hello@trustnorthlight.com" class="bgold">hello@trustnorthlight.com</a>
     </div>
   </div>
 
   <footer>
     <div style="display:flex;align-items:center;gap:20px">
-      <span class="fw">Northlight</span><span class="fn">·</span><span class="fn">Los Angeles, CA</span>
+      <span class="fw">Northlight</span><span class="fn">&middot;</span><span class="fn">Los Angeles, CA</span>
     </div>
     <span class="fn">By introduction or inquiry only</span>
   </footer>
@@ -578,7 +571,7 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
     </div>
     <div class="abouth-r">
       <p>Northlight was founded on a simple observation: between $10M and $200M in revenue, most organizations hit a structural ceiling that looks like an execution problem but is actually a decision problem.</p>
-      <p>Vendors sell tools. Consultants deliver frameworks. Neither addresses the root cause — decision infrastructure that stopped scaling with the organization. Northlight does the work that neither will: executive-level diagnosis, infrastructure redesign, and operational embedding.</p>
+      <p>Vendors sell tools. Consultants deliver frameworks. Neither addresses the root cause &mdash; decision infrastructure that stopped scaling with the organization. Northlight does the work that neither will: executive-level diagnosis, infrastructure redesign, and operational embedding.</p>
       <p>Where AI can operationalize the fix and make it permanent, we build it. But we never lead with technology. We lead with the diagnosis.</p>
     </div>
   </div>
@@ -586,16 +579,16 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
   <div class="aboutbody reveal">
     <div class="ac">
       <div class="stag">Yana</div>
-      <p>Northlight is led by <strong>Yana</strong>, whose background spans executive strategy, operations, and organizational decision systems — including doctoral research in Value-Driven Decision Making, the proprietary framework at the core of every Northlight engagement.</p>
-      <p>Her colleagues gave her a nickname — truth serum. She has a way of asking the questions that surface what's actually driving a problem, and building the systems to enforce the answer.</p>
+      <p>Northlight is led by <strong>Yana</strong>, whose background spans executive strategy, operations, and organizational decision systems &mdash; including doctoral research in Value-Driven Decision Making, the proprietary framework at the core of every Northlight engagement.</p>
+      <p>Her colleagues gave her a nickname &mdash; truth serum. She has a way of asking the questions that surface what&rsquo;s actually driving a problem, and building the systems to enforce the answer.</p>
       <p>She has worked with organizations across healthcare, hospitality, logistics, and professional services at moments of growth, structural transition, and operational strain. She executes, builds, and trains. She does not hand off frameworks and disappear.</p>
-      <p>She works with a small number of clients at any given time. Every client works directly with her — not a team briefed on the situation.</p>
+      <p>She works with a small number of clients at any given time. Every client works directly with her &mdash; not a team briefed on the situation.</p>
     </div>
     <div class="ac">
       <div class="stag">The firm</div>
       <p>Northlight is a decision intelligence firm. We are deliberately small and deliberately selective.</p>
-      <p><strong>We believe</strong> most organizational failures between $10M and $200M are not failures of talent, technology, or effort. They are failures of decision infrastructure — structures that worked at an earlier scale and were never rebuilt.</p>
-      <p><strong>We believe</strong> that AI is one of the most powerful tools for making organizational change permanent — but only when it's built on top of a clear decision framework, not instead of one. Technology without structure creates faster chaos.</p>
+      <p><strong>We believe</strong> most organizational failures between $10M and $200M are not failures of talent, technology, or effort. They are failures of decision infrastructure &mdash; structures that worked at an earlier scale and were never rebuilt.</p>
+      <p><strong>We believe</strong> that AI is one of the most powerful tools for making organizational change permanent &mdash; but only when it&rsquo;s built on top of a clear decision framework, not instead of one. Technology without structure creates faster chaos.</p>
       <p><strong>We believe</strong> the right engagement ends. Northlight is not a retainer business. It is a fix-and-leave business. We price for outcomes, not presence.</p>
     </div>
   </div>
@@ -606,24 +599,24 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
       <div class="pp">
         <div class="ppnum">01</div>
         <div class="ppname">Fixed fees only</div>
-        <p class="pptext">Every engagement is fixed-fee, scoped to a defined outcome. No billable hours. No day rates. We don't make more money if the problem takes longer — which means we're incentivized to solve it efficiently and leave.</p>
+        <p class="pptext">Every engagement is fixed-fee, scoped to a defined outcome. No billable hours. No day rates. We don&rsquo;t make more money if the problem takes longer &mdash; which means we&rsquo;re incentivized to solve it efficiently and leave.</p>
       </div>
       <div class="pp">
         <div class="ppnum">02</div>
         <div class="ppname">Small by design</div>
-        <p class="pptext">We take a limited number of engagements at any time. This is not a scale business. It is a craft business. Every client gets Northlight — not a junior team with a senior face on the proposal.</p>
+        <p class="pptext">We take a limited number of engagements at any time. This is not a scale business. It is a craft business. Every client gets Northlight &mdash; not a junior team with a senior face on the proposal.</p>
       </div>
       <div class="pp">
         <div class="ppnum">03</div>
         <div class="ppname">We stay until it works</div>
-        <p class="pptext">We define success as a working, adopted outcome — not a delivered document. Northlight does not consider an engagement complete until the solution is live and the people who need to use it are actually using it.</p>
+        <p class="pptext">We define success as a working, adopted outcome &mdash; not a delivered document. Northlight does not consider an engagement complete until the solution is live and the people who need to use it are actually using it.</p>
       </div>
     </div>
   </div>
 
   <div class="aboutexit">
     <div class="exit-lbl">When we leave</div>
-    <p class="exit-q">"Northlight exits when leadership can make and defend <span>consequential decisions</span> without relying on intuition, partial information, or political negotiation — and when operations no longer depend on executive heroics to function."</p>
+    <p class="exit-q">&ldquo;Northlight exits when leadership can make and defend <span>consequential decisions</span> without relying on intuition, partial information, or political negotiation &mdash; and when operations no longer depend on executive heroics to function.&rdquo;</p>
   </div>
 
   <div class="aboutcta reveal" id="about-contact">
@@ -631,21 +624,21 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
     <p class="hcta-lbl">Get in touch</p>
     <h2 class="hcta-h" style="margin-bottom:48px">The conversation is<br><em>always free.</em></h2>
     <div style="display:flex;align-items:center;gap:36px">
-      <a href="/cdn-cgi/l/email-protection#d1b9b4bdbdbe91a5a3a4a2a5bfbea3a5b9bdb8b6b9a5ffb2bebc" class="bgold"><span class="__cf_email__" data-cfemail="6f070a0303002f1b1d1a1c1b01001d1b07030608071b410c0002">[email&#160;protected]</span></a>
-      <button class="bgh" onclick="showPage('work')">See how we work →</button>
+      <a href="mailto:hello@trustnorthlight.com" class="bgold">hello@trustnorthlight.com</a>
+      <button class="bgh" onclick="showPage('work')">See how we work &rarr;</button>
     </div>
     <p class="hcta-sm">We respond to every inquiry personally. You will hear from Yana directly.</p>
   </div>
 
   <footer>
     <div style="display:flex;align-items:center;gap:20px">
-      <span class="fw">Northlight</span><span class="fn">·</span><span class="fn">Los Angeles, CA</span>
+      <span class="fw">Northlight</span><span class="fn">&middot;</span><span class="fn">Los Angeles, CA</span>
     </div>
     <span class="fn">trustnorthlight.com</span>
   </footer>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function showPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
@@ -670,4 +663,24 @@ function goContact() {
 
 function toggleO(item) {
   const open = item.classList.contains('open');
-  document.querySelectorAll('.oi.open').forEach(
+  document.querySelectorAll('.oi.open').forEach(el => el.classList.remove('open'));
+  if (!open) item.classList.add('open');
+}
+
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+  checkReveals();
+});
+
+function checkReveals() {
+  const active = document.querySelector('.page.active');
+  if (!active) return;
+  active.querySelectorAll('.reveal').forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 50) el.classList.add('visible');
+  });
+}
+
+setTimeout(checkReveals, 200);
+</script>
+</body>
+</html>
