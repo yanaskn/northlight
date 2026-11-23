@@ -219,6 +219,8 @@ nav.scrolled{background:rgba(8,8,7,.96);backdrop-filter:blur(20px);border-color:
 @media(max-width:600px){nav{flex-wrap:wrap;gap:12px;padding:14px 24px}.nlinks{width:100%;justify-content:space-between;gap:12px}.pghero{padding-top:160px}.case-study{scroll-margin-top:116px}.case-kicker{font-size:.75rem;letter-spacing:.08em}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+#page-case-studies .case-study{padding-top:160px}
+@media(max-width:600px){.nlinks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 8px}.nlinks .nl{text-align:left;line-height:1.6}.ncta{position:absolute;top:30px;right:24px}.nl:focus-visible,.ncta:focus-visible{outline:2px solid var(--a);outline-offset:5px}}
 /* ══════════ ABOUT PAGE ══════════ */
 .abouthero{padding:160px 52px 100px;border-bottom:.5px solid var(--b);display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:end}
 .abouth{font-family:var(--serif);font-size:clamp(46px,6vw,90px);font-weight:300;line-height:.94;letter-spacing:-.02em}
@@ -289,10 +291,11 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
     <span class="nwm">Northlight</span>
   </button>
   <div class="nlinks">
-    <button class="nl" onclick="showPage('home')">Index</button>
-    <button class="nl" onclick="showPage('work')">Work</button>
+    <button class="nl" onclick="showPage('home')">Home</button>
+    <button class="nl" onclick="showPage('work')">Services</button>
+    <button class="nl" onclick="showPage('case-studies')">Case Studies</button>
     <button class="nl" onclick="showPage('about')">About</button>
-    <button class="ncta" onclick="goContact()">Get in touch &rarr;</button>
+    <button class="ncta" onclick="goContact()">Contact</button>
   </div>
 </nav>
 
@@ -527,10 +530,39 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
     </div>
   </div>
 
+
+
+  <div class="exit-band">
+    <div class="exit-lbl">Our commitment</div>
+    <p class="exit-q">&ldquo;We take responsibility for <span>our agreed deliverables and delegated work.</span> Transformation outcomes depend on decisions, resources, and execution across the client team.&rdquo;</p>
+  </div>
+
+  <div class="engage reveal">
+    <div>
+      <div class="stag">Start here</div>
+      <h2 class="eng-h">Every engagement begins with an <em>honest conversation.</em></h2>
+    </div>
+    <div class="eng-r">
+      <p>The initial conversation explores your business goals, current challenges, and the most useful starting point. Substantial business assessment and analysis are defined as paid work.</p>
+      <p>We will discuss fit, potential scope, and what an appropriate first engagement might look like. You will hear from Yana directly.</p>
+      <a href="mailto:yana@trustnorthlight.com" class="bgold">yana@trustnorthlight.com</a>
+    </div>
+  </div>
+
+  <footer>
+    <div style="display:flex;align-items:center;gap:20px">
+      <span class="fw">Northlight</span><span class="fn">&middot;</span><span class="fn">Los Angeles, CA</span>
+    </div>
+    <span class="fn">By introduction or inquiry only</span>
+  </footer>
+</div>
+
+<!-- CLIENT CASE STUDIES -->
+<div class="page" id="page-case-studies">
   <article class="case-study" id="hospitality-case-study" aria-labelledby="case-title">
     <div class="case-inner">
       <div class="case-kicker">Client experience &middot; Business &amp; technology transformation</div>
-      <h2 class="case-title" id="case-title">Modernizing the operations behind <em>a hospitality business.</em></h2>
+      <h1 class="case-title" id="case-title">Modernizing the operations behind <em>a hospitality business.</em></h1>
       <p class="case-intro">Connecting business strategy, operational redesign and technology to support a more integrated, data-informed organization.</p>
 
       <div class="case-story">
@@ -584,24 +616,6 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
       </div>
     </div>
   </article>
-
-  <div class="exit-band">
-    <div class="exit-lbl">Our commitment</div>
-    <p class="exit-q">&ldquo;We take responsibility for <span>our agreed deliverables and delegated work.</span> Transformation outcomes depend on decisions, resources, and execution across the client team.&rdquo;</p>
-  </div>
-
-  <div class="engage reveal">
-    <div>
-      <div class="stag">Start here</div>
-      <h2 class="eng-h">Every engagement begins with an <em>honest conversation.</em></h2>
-    </div>
-    <div class="eng-r">
-      <p>The initial conversation explores your business goals, current challenges, and the most useful starting point. Substantial business assessment and analysis are defined as paid work.</p>
-      <p>We will discuss fit, potential scope, and what an appropriate first engagement might look like. You will hear from Yana directly.</p>
-      <a href="mailto:yana@trustnorthlight.com" class="bgold">yana@trustnorthlight.com</a>
-    </div>
-  </div>
-
   <footer>
     <div style="display:flex;align-items:center;gap:20px">
       <span class="fw">Northlight</span><span class="fn">&middot;</span><span class="fn">Los Angeles, CA</span>
@@ -688,12 +702,12 @@ footer{padding:28px 52px;border-top:.5px solid var(--b);display:flex;justify-con
 
 <script>
 function showPage(id, updateUrl = true) {
-  if (!['home', 'work', 'about'].includes(id)) id = 'home';
+  if (!['home', 'work', 'case-studies', 'about'].includes(id)) id = 'home';
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
   document.querySelectorAll('.nl').forEach(l => l.classList.remove('active'));
-  const map = { home:'Index', work:'Work', about:'About' };
-  document.querySelectorAll('.nl').forEach(l => { if(l.textContent.trim()===map[id]) l.classList.add('active'); });
+  const map = { home:'Home', work:'Services', 'case-studies':'Case Studies', about:'About' };
+  document.querySelectorAll('.nl').forEach(l => { if(l.textContent.trim()===map[id]) { l.classList.add('active'); l.setAttribute('aria-current', 'page'); } else { l.removeAttribute('aria-current'); } });
   if (updateUrl && window.location.hash !== '#' + id) history.pushState(null, '', '#' + id);
   window.scrollTo({ top:0, behavior:'instant' });
   setTimeout(checkReveals, 80);
@@ -702,10 +716,9 @@ function showPage(id, updateUrl = true) {
 function restoreRoute() {
   const route = window.location.hash.slice(1);
   if (route === 'hospitality-case-study') {
-    showPage('work', false);
-    requestAnimationFrame(() => document.getElementById('hospitality-case-study').scrollIntoView({ behavior:'instant', block:'start' }));
+    showPage('case-studies', false);
   } else {
-    showPage(['home', 'work', 'about'].includes(route) ? route : 'home', false);
+    showPage(['home', 'work', 'case-studies', 'about'].includes(route) ? route : 'home', false);
   }
 }
 window.addEventListener('hashchange', restoreRoute);
